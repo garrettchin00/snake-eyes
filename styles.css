@@ -1,0 +1,28 @@
+/* CSS BY Garrett Chin */
+
+/* IMPORTED FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ---------- CSS Variables ---------- */
+:root{
+  /* Theme Colors */
+    --red: #c72615;
+    --white: #fff;
+    --black: #020202;
+    --gray: #939393;
+    --dk-gray: #222;
+
+    /* Other Colors */
+    --lt-gray: #f2f2f2;
+    --purple: #6b1869;
+    --magenta: #eb1cf0;
+    --box-shadow-sm: -3px 3px 6px var(--lt-med-gray);
+    --box-shadow-lg: -6px 6px 10px var(--lt-med-gray);
+
+    /* ----- FONTS ----- */
+    --font-family: 'Cabin', 'Open Sans', sans-serif;
+
+    /* Background */
+    background-color: #eb1cf0;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%236b1869' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+}
