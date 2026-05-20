@@ -11,30 +11,21 @@
         <link rel="icon" href="images/favicon.ico" type="image/x-icon">
         <!-- GOOGLE FONTS LINKS -->
         <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-        <script src="scripts.js" defer></script>
     </head>
 
     <body>
-        <header>
+        <div class="game-container">
             <h1>Snake Eyes</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#play">Play Game</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <main>
-            <section id="play">
-                <h2>Play Game</h2>
-                <p>Click the button to roll the two dice. If you get two ones, you win!</p>
-                <span id="random1"></span>
-                <span id="random2"></span>
-                <span id="snakeEyesMsg"></span>
-                <button id="roll">Roll Dice!</button>
-            </section>
-        </main>
+            <div class="dice-area">
+                <div id="die1" class="dice">1</div>
+                <div id="die2" class="dice">1</div>
+            </div>
+            <button id="roll-btn">Roll Dice</button>
+            <p>Current Score: <span id="score">0</span></p>
+            <p id="message"></p>
+        </div>
+        <script src="scripts.js"></script>
+    </body>
         
         <footer>
             <section>
