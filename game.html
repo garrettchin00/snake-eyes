@@ -14,25 +14,28 @@
     </head>
 
     <body>
-        <div class="game-container">
-            <h1>Snake Eyes</h1>
-            <header>
+        <header>
                 <nav>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="game.html">Play Game</a></li>
                     </ul>
                 </nav>
-            </header>
-            <div class="dice-area">
-                <div id="die1" class="dice">1</div>
-                <div id="die2" class="dice">1</div>
+        </header>
+        
+        <main>
+            <div class="game-container">
+                <h1>Snake Eyes</h1>
+                <div class="dice-area">
+                    <div id="die1" class="dice">1</div>
+                    <div id="die2" class="dice">1</div>
+                </div>
+                <button id="roll-btn">Roll Dice</button>
+                <p>Current Score: <span id="score">0</span></p>
+                <p id="message"></p>
             </div>
-            <button id="roll-btn">Roll Dice</button>
-            <p>Current Score: <span id="score">0</span></p>
-            <p id="message"></p>
-        </div>
-        <script src="script.js"></script>
+            <script src="script.js"></script>
+        </main>
     </body>
         
         <footer>

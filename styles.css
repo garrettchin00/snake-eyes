@@ -27,6 +27,25 @@
     background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h20L0 20z' fill='%236b1869' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
 }
 
+/* ---------- Header Styles ---------- */
+header{
+  padding: 1rem;
+  width: 968px;
+  margin: 0 auto;
+  background-color: var(--black);
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+}
+
+/* ----- HEADING STYLES ----- */
+h1{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
 /* ---------- CSS RESET ---------- */
 img{
     max-width: 100%;
@@ -69,6 +88,32 @@ body{
   font-family: var(--font-family);
   font-size: large;
   margin: 0 auto 20px auto;
+}
+
+.game-container p{
+  margin: 0 auto 20px auto;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: medium;
+  text-align: center;
+}
+
+.game-container #score {
+  margin: 0 auto 20px auto;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: medium;
+}
+
+.game-container #score span{
+  font-weight: bold;
+}
+
+.game-container #message{
+  margin: 0 auto 20px auto;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: medium;
 }
 
 input{
@@ -151,7 +196,7 @@ a{
 
 a:hover{
   color: var(--black);
-  text-decoration-color: none;
+  text-decoration-color: var(--black);
   font-weight: bold;
 }
 
@@ -169,16 +214,6 @@ nav ul{
   margin: 0 auto;
   float: none;
   justify-content: center;
-}
-
-/* ---------- List Styles ---------- */
-li{
-  display: block;
-  text-align: left;
-  color: var(--white);
-  font-size: 1.25rem;
-  font-weight: bold;
-  font-family: 'Cabin', sans-serif;
 }
 
 /* ---------- Nav a Styles --------- */
@@ -218,12 +253,12 @@ main > section{
 
 /* ---------- Main H2 Styles ---------- */
 main h2{
-  font-size: 1rem;
+  font-size: 2rem;
   padding: 0;
   width: auto;
   margin: 0 auto 1rem auto;
   background-color: var(--red);
-  color: var(--dk-gray);
+  color: var(--white);
 }
 
 /* ---------- Main P Styles ---------- */
@@ -232,6 +267,29 @@ main p{
   line-height: 1.5;
   width: 520px;
   margin: 0 auto;
+  text-decoration: none;
+}
+
+main a{
+  color: var(--white);
+  text-decoration-thickness: 2px;
+  text-decoration: none;
+  text-underline-offset: 4px;
+}
+
+main a:hover{
+  color: var(--black);
+  text-decoration-color: var(--black);
+}
+
+/* ---------- List Styles ---------- */
+li{
+  display: block;
+  text-align: left;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
 }
 
 iframe{
