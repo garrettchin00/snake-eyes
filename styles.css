@@ -54,11 +54,58 @@ body{
 
 /* ---------- Game Styles ---------- */
 .game-container{
-    text-align: center;
-    background: #34495e;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 2px solid var(--white);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+  background: #34495e;
+}
+
+.game-container h2{
+  margin-top: 0;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: large;
+  margin: 0 auto 20px auto;
+}
+
+input{
+  padding: 20px;
+  width: 60px;
+  font-family: var(--font-family);
+  font-size: medium;
+}
+
+button{
+  padding: 20px;
+  width: 120px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: medium;
+  background-color: var(--white);
+}
+
+button:hover{
+  background-color: var(--lt-gray);
+  color: var(--red);
+}
+
+.results-area{
+  margin-top: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+#displayUser, #displayRandom, #displayResult{
+  margin-top: 10px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  opacity: 1;
+  color: var(--white);
 }
 
 .dice-area{
@@ -103,6 +150,161 @@ a{
 }
 
 a:hover{
+  color: var(--black);
+  text-decoration-color: none;
+  font-weight: bold;
+}
+
+/* ---------- Nav Ul Styles --------- */
+nav{
+  color: var(--white);
+  font-family: var(--font-family);
+}
+
+nav ul{
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+  float: none;
+  justify-content: center;
+}
+
+/* ---------- List Styles ---------- */
+li{
+  display: block;
+  text-align: left;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: 'Cabin', sans-serif;
+}
+
+/* ---------- Nav a Styles --------- */
+nav a{
+  text-decoration: none;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: var(--white);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+/* ---------- Navigation a Hover Styles ---------- */
+nav a:hover{
+  border-color: var(--red);
   color: var(--red);
-  text-decoration-color: var(--white);
+}
+
+/* ---------- Main Styles ---------- */
+main{
+  width: 1000px;
+  padding: 2rem 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-bottom: 8px;
+  margin-right: auto;
+  background-color: var(--red);
+}
+
+/* ---------- Main Section Styles ---------- */
+main > section{
+  padding-top: 2rem;
+  padding-bottom: 9rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ---------- Main H2 Styles ---------- */
+main h2{
+  font-size: 1rem;
+  padding: 0;
+  width: auto;
+  margin: 0 auto 1rem auto;
+  background-color: var(--red);
+  color: var(--dk-gray);
+}
+
+/* ---------- Main P Styles ---------- */
+main p{
+  font-size: 1.25rem;
+  line-height: 1.5;
+  width: 520px;
+  margin: 0 auto;
+}
+
+iframe{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  float: right;
+  top: -150px;
+  overflow: clip !important;
+  border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+}
+
+/* ---------- Footer Styles ---------- */
+footer{
+  padding: 1rem;
+  width: 968px;
+  margin: 0 auto;
+  background-color: var(--white);
+  text-align: center;
+  padding-top: 2rem;
+  font-family: 'Open Sans', sans-serif;
+}
+
+footer h2{
+  margin: 0 auto;
+  font-size: 1.35rem;
+  line-height: 1;
+  grid-column: 1/-1;
+}
+
+footer section{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.5rem 1rem;
+  width: 520px;
+  text-align: center;
+  margin: 0 auto 1rem auto;
+}
+
+footer a{
+  padding: 0.5rem;
+  color: var(--black);
+  text-underline-offset: 4px;
+  text-decoration-color: var(--red);
+  text-decoration-thickness: 2px;
+}
+
+footer a:hover{
+  color: var(--red);
+}
+
+footer p{
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+#phone{
+  display: block;
+  width: 100%;
+  padding: 0.25rem 0.5rem;
+  background: none;
+  background-color: var(--white);
+  outline: none;
+  border: 1px solid var(--lt-gray);
+  box-shadow: var(--box-shadow-sm);
+  line-height: 1;
+  height: 2.5rem;
+}
+
+label{
+  display: block;
+  margin: 1rem 0 0 1rem;
 }
