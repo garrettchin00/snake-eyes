@@ -1,4 +1,6 @@
 let totalScore = 0;
+var n = Math.random() * 6;
+console.log(n);
 const rollBtn = document.getElementById('roll-btn');
 
 rollBtn.addEventListener('click', () => {

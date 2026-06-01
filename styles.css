@@ -366,3 +366,127 @@ label{
   display: block;
   margin: 1rem 0 0 1rem;
 }
+
+/* ---------- Button Styles ---------- */
+#submit.button{
+  background-color: var(--white);
+  border-radius: 5px;
+  padding: 10px;
+  text-decoration: none;
+  color: var(--black);
+  font-size: 1.5em;
+  display: grid;
+  text-align: center;
+  width: 300px;
+  border: 2px solid var(--white);
+  font-family: var(--font-family);
+}
+
+#submit.button:hover{
+  border-color: var(--red);
+  color: var(--red);
+}
+
+#submit.button:focus{
+  box-shadow: var(--box-shadow-lg);
+  border: 2px solid var(--purple);
+}
+
+#submit.button:active{
+  box-shadow: var(--box-shadow-sm);
+  border: 2px solid var(--purple);
+}
+
+#submit.button a{
+  color: var(--red);
+  text-decoration: none;
+}
+
+#submit.button a:hover{
+  color: var(--red);
+  text-decoration-color: var(--black);
+}
+
+#submit.button a:focus{
+  box-shadow: var(--box-shadow-lg);
+  border: 2px solid var(--gray);
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 768px){
+  main{
+    width: 90%;
+  }
+  header, footer{
+    width: 90%;
+  }
+  nav ul{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  #contact ul{
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  iframe{
+    display: none;
+  }
+}
+
+/* ---------- Accessibility Styles ---------- */*{
+  outline: none;
+}
+
+.game-container{
+  border: 2px solid var(--white);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  margin: 20px auto;
+  font-family: Arial, sans-serif;
+}
+
+.game-container h2{
+  margin-top: 0;
+  color: var(--white);
+  font-family: var(--font-family);
+  font-size: large;
+  margin: 0 auto 20px auto;
+}
+
+input{
+  padding: 20px;
+  width: 60px;
+  font-family: var(--font-family);
+  font-size: medium;
+}
+
+button{
+  padding: 20px;
+  width: 120px;
+  cursor: pointer;
+  font-family: var(--font-family);
+  font-size: medium;
+  background-color: var(--white);
+}
+
+button:hover{
+  background-color: var(--lt-gray);
+  color: var(--red);
+}
+
+.results-area{
+  margin-top: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+  font-family: var(--font-family);
+  color: var(--white);
+}
+
+#displayUser, #displayRandom, #displayResult{
+  margin-top: 10px;
+  font-family: var(--font-family);
+  font-size: 20px;
+  opacity: 1;
+  color: var(--white);
+}
